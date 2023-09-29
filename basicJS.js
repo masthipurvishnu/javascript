@@ -52,4 +52,41 @@
     that executes a function instantly after it's defined.
     Developers primarily use this pattern to ensure variables 
     are only accessible within the scope of the defined function.
+    
+//FOR FOR/IN FOR/OF
+// The for and for/in looping constructs give you access to the index in the array, not the actual element
+// forEach() and for/of, you get access to the array element itself
+
+
+//FOREACH
+// does not return or we cant return anything from forEach.
+// if you want you can modify the original value within the forEach
+
+// SHIFT
+// shift() : Removes one element from starting
+// Original array will have one element removed at front. 
+// Returns newArray with the removed element
+//UNSHIFT
+// unshift(element0)
+// unshift(element0, element1)
+// unshift(element0, element1,  ..., elementN)
+
+// SLICE
+// slice()
+// slice(start)
+// slice(start, end)
+
+// SPLICE
+// items.splice() // no changes to the original array but creates newArray with empty values
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2, itemN)
+
+
+rotateArray([1, 2, 3, 4, 5], 4)
+// d is number of rotations
+// output: [5, 1, 2, 3, 4]
+// [2, 3, 4, 5, 1] => [3, 4, 5, 1, 2]=> [4, 5, 1, 2, 3]=> [5, 1, 2, 3, 4]
+// PALANDROM
 */

@@ -109,19 +109,7 @@ const addTwo = (arr1) => {
 
 console.log(addTwo([1, 2, 3]));
 console.log(addTwo([0, 0]));
-flat()
-flat(depth)
 
-The flat() method creates a new array with all sub-array elements 
-concatenated into it recursively up to the specified depth.
-const arr1 = [0, 1, 2, [3, 4]];
-console.log(arr1.flat());
-// expected output: [0, 1, 2, 3, 4]
-const arr2 = [0, 1, 2, [[[3, 4]]]];
-console.log(arr2.flat(2));
-// expected output: [0, 1, 2, [3, 4]]
-
-flatMap() = map() + flat()
 
 Words: 26
 Points: 0 / 1
@@ -709,4 +697,125 @@ await promisifyFunction(multiplyByTwo)(3).then(val => val + 1) should return 7
         No answer given
         Points: 0 / 1
 
+Citi:
+1. Which of the foloowing is blocked by the same-origin policy by default?
+    a. <img> with src of another origin
+    b. XMLHttpRequest with a URL of another origin
+    c. Both of the above
+    d. Neither of the above
+2. Which of the following HTTP methods can have a request body?
+    a. put
+    b.patch
+    c.post
+    d. all of the above
+3. Which of the following enables faster initial page rendering?
+    a. Using the 'defer' keyword to load analytics scripts
+    b. Minifying scripts
+    c. Both of the above
+    d. Neither of the above
+4. Which of the follwoing CSS properties can be animated?
+    a. font-familu
+    b. display
+    c. background-image
+    d. border-color
+5. which of the foloowing evaluates to 'false' in an 'if' condition?
+    a. {}
+    b. ""
+    c. []
+    d. [null]
+
+6. Which of the following statments is not true about JS Promises?
+    a. The 'Promise()' constructor can be used to create a promise
+    b. Apromise can be rejected only once
+    c. Initial state of a promise is 'pending'
+    d. Promise error handling cannot be done using Promise.prototype.then()
+7. Which of the following would not set a class on a DOM element?
+    a. element.class = 'foobar'
+    b. element.className = 'foobar'
+    c. element.classList.add('foobar')
+    d. element.setAttribute('class', 'foobar')
+8. Which of the follwoing introduces a potential web accessibility problem or barrier?
+    a. Adding texual descriptions to <img> tags with 'alt' attributes
+    b. Using only <h1>,..,<h6> tags to deonote headings
+    c. Using color as the only method to hightlight important information
+    d. Providing text transcripts for audio clips 
+9. What is HTTP status code 403?
+    a. Client error
+    b. Server error
+    c. Both of the above
+    d. Success
+
+10. Which of the following is not an HTML5 element?
+    a. <video>
+    b. <audio>
+    c. <graphic>
+    d. <svg>
+
+
+
+const parentComponent = () => {
+    const conten1 =  () => {
+        return (<div>From childComponent</div>)
+    }
+    return (<>
+        <childComponent render={content1} />
+        </>)     
+}
+
+const childComponent = () => {
+    return (<>
+            <div>abcd</div>
+            {prop.render()}
+            <div>abcd</div>
+        </>)     
+}
+
+
+
+
+
+    1.b
+    2. d
+    3. c
+    4. c
+    5. b
+    6. b
+    7. c
+    8. c
+    9. a
+    10. c
+
+    correct as per chatgpt
+    1. 
+    2. 
+    3. b
+    
+    5. b
+    
+    a. {}
+    b. ""
+    c. []
+    d. [null]
+
+    if([null]){ // {} [] => true/returns 1, "" returns 2
+        console.log(1)
+    } else {        
+        console.log(2)
+    }
+
+    7. a    
+    a. element.class = 'foobar' // Element does not have class property.
+    b. element.className = 'foobar'
+    c. element.classList.add('foobar') // you can have list of class attributes
+    d. element.setAttribute('class', 'foobar') // 
+
+    9. a
+    Informational responses (100 – 199)
+    Successful responses (200 – 299)
+    Redirection messages (300 – 399)
+    Client error responses (400 – 499)
+    Server error responses (500 – 599)
+
+    10. c
+       c. <graphic> // instead we have <canvas></canvas>
     */
